@@ -24,23 +24,36 @@
     <div class="content">
     <p class="lead">OTA YHTEYTTÄ</p> 
 
-    <div>
-        <p>Nimi: <input type="text"></p>
-        <p>Osoite: <input type="text"></p>
-        <p>Puhelin: <input type="text"></p>
-        <p>Sähköposti: <input type="text"></p>
-        <p>Viesti: <input type="text"></p>
-    </div>
 
-    <div">
-        <form>
-
-            <p>
-                <input type="button" id="painike" value="Lähetä" onclick="laskePalkka()">
-            </p>
         </form>
     
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">Nimi</label>
+              <input type="text" id="fname" name="firstname" placeholder="Nimesi">
+          
+              <label for="lname">Sähköposti</label>
+              <input type="text" id="lname" name="lastname" placeholder="Sähköpostiosoite"> 
 
+              <label for="lname">Puhelinnumero</label>
+              <input type="text" id="lname" name="lastname" placeholder="Puhelinnumero">
+          
+              <label for="country">Yhteydenoton syy</label>
+              <select id="country" name="country">
+                <option value="canada">Aikataulu</option>
+                <option value="usa">Laskutus</option>
+                <option value="australia">Tilauksen peruutus</option>
+                <option value="usa">Muut asiat</option>
+              </select>
+          
+              <label for="subject">Lisätiedot</label>
+              <textarea id="subject" name="subject" placeholder="Lisätiedot" style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
     
     
     </div>

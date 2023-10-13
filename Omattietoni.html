@@ -24,28 +24,43 @@
     <div class="content">
     <p class="lead">OMAT TIETONI</p>
    
-    <div">
-        <form>
-            <p>
-                <label>Nimi:</label>
-                <input type="text" id="nimi" size="">
-            </p>
-            <p>
-                <label>Osoite:</label>
-                <input type="text" id="osoite" size="">
-            </p>
-            <p>
-                <label>Puhelin:</label>
-                <input type="text" id="puhelin" size="">
-            </p>
-            <p>
-                <label>Sähköposti:</label>
-                <input type="text" id="sähköposti" size="">
-            </p>
-            <p>
-                <input type="button" id="painike" value="Päivitä tiedot" onclick="laskePalkka()">
-            </p>
+    <div class="content3">
+        <p>Nimi: Anne Asiakas</p>
+        <p>Osoite: Asiakaskatu 6</p>
+        <o>Postinumero: 01230</p> 
+        <p>Kaupunki: Onnela</p>
+        <p>Sähköposti: anne.asiakas@asiakasposti.fi</p>
+        <p>Puhelinnumero: 040 987 6543</p> 
+
+
+    </div> 
+    <div class="content">
+        <p class="lead">Tietojen päivitys</p>
+    </div>    
+
+    <div class="container">
+        <form action="action_page.php">
+      
+            
+      
+          <label for="country">Päivitettävä tieto</label>
+          <select id="country" name="country">
+            <option value="nimi">Nimi</option>
+            <option value="usa">Osoite</option>
+            <option value="australia">Postinumero</option>
+            <option value="australia">Kaupunki</option>
+            <option value="australia">Sähköposti</option>
+            <option value="usa">Puhelinnumero</option>
+          </select>
+      
+          <label for="subject">Lisätiedot</label>
+          <textarea id="subject" name="subject" placeholder="Lisätiedot" style="height:200px"></textarea>
+      
+          <input type="submit" value="Påivitä tiedot">
+      
         </form>
+      </div>
+
 
     
     
